@@ -1,6 +1,11 @@
 
 
 
+
+
+
+
+
 from transformers import pipeline
 
 generator = pipeline(
@@ -39,3 +44,16 @@ result = generator(
 )
 
 print(result[0]["generated_text"][-1]["content"])
+
+
+
+
+
+import matplotlib.pyplot as plt
+month = ["jan","feb","mar"]
+sales = [20,30,25]
+plt.plot(month,sales)
+plt.title("monthly sales")
+plt.xlabel("month")
+plt.ylabel("sales")
+plt.show()
